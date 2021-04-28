@@ -22,7 +22,7 @@ cc.Class({
     jumpAction(dt) {
         if (this.node.y >= this.jumpHeight) this._jumdirection = -1;
         if (this.node.y < 50) this._jumdirection = 1;
-        this.node.y += 10* this._jumdirection;
+        this.node.y += 10*this._jumdirection;
     },
 
     start() {
@@ -32,10 +32,5 @@ cc.Class({
     update(dt) {
         this.jumpAction(dt)
         this.time+=dt
-        if(this.time>=1){
-            this.talk('Bunny')
-            this.time=0
-        }
-
     },
 });

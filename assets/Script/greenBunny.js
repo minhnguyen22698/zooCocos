@@ -7,31 +7,31 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-var bun = require('bunny')
-
+var bun = require("bunny");
 cc.Class({
-    extends: bun,
+  extends: bun,
+  properties: {
+    _scale: 1,
+    _time: 0,
+  },
 
-    properties: {
-        _angleRotate: 180,
-        _time: 0
-    },
+  scaleAction(dt) {
+    if (dt <= 20) {
+      this.node.scale += 0.5 / 20;
+    } else {
+      this.node.scale -= 1 / 40;
+    }
+  },
 
-    start() {
-        this.talk('Brown Bunny')
-    },
-    rotateAction() {
-        this.node.angle = Math.round(this.node.angle + 3)
-    },
+  start() {},
 
-    update(dt) {
-        this._time+=1
-        if (this._time <= 60) {
-            this.rotateAction();
-        } else if (this._time > 60 * 3) {
-            this._time = 0;
-            this._angleRotate += 180
-            
-        }
-    },
+  update(dt) {
+    this._time += 1;
+    if (this._time <= 60) {
+      this.scaleAction(this._time);
+    } else if (this._time >= 120) {
+        this.node.scale=1
+        this._time=0
+    }
+  },
 });
