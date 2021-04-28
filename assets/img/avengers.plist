@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+	<dict>
+		<key>frames</key>
+		<dict>
+			<key>33499-5-jungle-file.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,0},{907,876}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{0,0},{907,876}}</string>
+				<key>sourceSize</key>
+				<string>{907,876}</string>
+			</dict>
+
+			<key>brownrabbit.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{74,877},{36,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{14,0},{36,64}}</string>
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+
+			<key>greenrabbit.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{111,877},{36,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{14,0},{36,64}}</string>
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+
+			<key>rabbit.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{37,877},{36,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{14,0},{36,64}}</string>
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+
+			<key>redrabbit.png</key>
+			<dict>
+				<key>frame</key>
+				<string>{{0,877},{36,64}}</string>
+				<key>offset</key>
+				<string>{0,0}</string>
+				<key>rotated</key>
+				<false/>
+				<key>sourceColorRect</key>
+				<string>{{14,0},{36,64}}</string>
+				<key>sourceSize</key>
+				<string>{64,64}</string>
+			</dict>
+
+		</dict>
+
+		<key>metadata</key>
+		<dict>
+			<key>format</key>
+			<integer>2</integer>
+			<key>size</key>
+			<string>{908,942}</string>
+			<key>textureFileName</key>
+			<string>avengers.png</string>
+			</dict>
+		</dict>
+</plist>
