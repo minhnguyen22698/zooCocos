@@ -23,7 +23,7 @@ cc.Class({
             this.node.skewX-=1.5
         }else if(this._time<60) {
             this.node.skewX+=3 
-           console.log(this.node.skewX)
+        //    console.log(this.node.skewX)
         }else{
             this.node.skewX-=1.5
         }

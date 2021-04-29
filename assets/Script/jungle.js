@@ -7,28 +7,32 @@
 // Learn life-cycle callbacks:
 //  - [Chinese] https://docs.cocos.com/creator/manual/zh/scripting/life-cycle-callbacks.html
 //  - [English] https://www.cocos2d-x.org/docs/creator/manual/en/scripting/life-cycle-callbacks.html
-var bun = require('bunny')
 
 cc.Class({
-    extends: bun,
+    extends: cc.Component,
 
     properties: {
-        _time: 0
-    },
-
-    start() {
-        this.talk('Brown Bunny, we rotate')
-    },
-    rotateAction() {
-        this.node.angle = Math.round(this.node.angle + 3)
-    },
-
-    update(dt) {
-        this._time+=1
-        if (this._time <= 60) {
-            this.rotateAction();
-        } else if (this._time > 60 * 3) {
-            this._time = 0;
+        redBunny: {
+            default: null,
+            type: [cc.Prefab],
         }
     },
+
+    // LIFE-CYCLE CALLBACKS:
+    initRedBunny() {
+        for (let i = 0; i < 7; i++) {
+            var redBun = cc.instantiate(this.redBunny)
+            redBun.x = 500+i*70
+            redBun.y = 50
+            this.node.addChild(redBun)
+        }
+
+    },
+    // onLoad () {},
+
+    start() {
+        this.initRedBunny()
+    },
+
+    // update (dt) {},
 });

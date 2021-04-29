@@ -12,8 +12,6 @@ cc.Class({
     extends: cc.Component,
     properties: {
         _objname: 'not set',
-        // jumpHeight: [cc.Integer],
-        // jumpDur: [cc.Integer],
         objname: {
             get: function () {
                 return this._objname;
