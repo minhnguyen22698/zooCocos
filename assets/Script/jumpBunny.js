@@ -26,7 +26,7 @@ cc.Class({
     },
 
     start() {
-        this.talk('Bunny')
+        this.talk('Bunny, we jump')
     },
 
     update(dt) {

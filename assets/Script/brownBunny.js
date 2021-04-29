@@ -18,7 +18,7 @@ cc.Class({
     },
 
     start() {
-        this.talk('Brown Bunny')
+        this.talk('Brown Bunny, we rotate')
     },
     rotateAction() {
         this.node.angle = Math.round(this.node.angle + 3)
