@@ -15,11 +15,9 @@ cc.Class({
     properties: {
         _jumdirection: 1,
         jumpHeight:[cc.Integer],
-        jumpDuration:1,
-        time:0,
     },
 
-    jumpAction(dt) {
+    jumpAction() {
         if (this.node.y >= this.jumpHeight) this._jumdirection = -1;
         if (this.node.y < 50) this._jumdirection = 1;
         this.node.y += 10*this._jumdirection;
@@ -30,7 +28,6 @@ cc.Class({
     },
 
     update(dt) {
-        this.jumpAction(dt)
-        this.time+=dt
+        this.jumpAction()
     },
 });

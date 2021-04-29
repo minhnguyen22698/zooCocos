@@ -50,8 +50,8 @@
     },
     "_position": {
       "__type__": "cc.Vec3",
-      "x": 550,
-      "y": 50,
+      "x": 700,
+      "y": 200,
       "z": 0
     },
     "_scale": {
@@ -114,6 +114,7 @@
       "__id__": 1
     },
     "_enabled": true,
+    "_objname": "not set",
     "_time": 0,
     "_id": ""
   },
